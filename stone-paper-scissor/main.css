@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #778899;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.score{
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.player-score, .computer-score{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player-score p, .computer-score p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.lets-play{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    opacity: 1;
+}
+
+.lets-play.fadeout{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100px);
+}
+
+.msg{
+    font-size: 30px;
+}
+
+.play{
+    font-size: 20px;
+    background-color: #3cb371;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play:hover{
+    background-color: #00fa9a;
+}
+
+.game{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    
+    transform: translateY(50px);
+}
+
+.info{
+    font-size: 30px;
+}
+
+.imgs{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+#img1,#img2{
+    width: 30vh;
+    height: 30vh;
+}
+#img1{
+    transform: scaleX(-1);
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+}
+.options button{
+    background-color: #3cb371;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game.fadein{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.endgame{
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 150px;
+    position: relative;
+    left: -10px;
+    background-color: crimson;
+}
+.endgame:hover{
+    background-color: firebrick;
+}
+
+.winner{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50px);
+    
+}
+
+.winner img{
+    width: 25vh;
+    height: 25vh;
+}
+
+.exit{
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    background-color: crimson;
+}
+
+.winner.fadein{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
