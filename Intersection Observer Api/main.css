@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+}
+
+.section1{
+    background-color: antiquewhite;
+}
+
+.section2{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section2 div{
+    width: 200px;
+    border: 1px solid gray;
+}
+
+.section2 img{
+    object-fit: cover;
+    height: 400px;
+    transition: all 1s ease-in-out;
+}
+
+.section3{
+    background-color: bisque;
+}
