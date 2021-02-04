@@ -15,7 +15,7 @@ const fun = (h, m, s) => {
     ((m + s / 60) * 360) / 60 - 90
   }deg)`;
   hourHand.style.transform = `translate(100%, 50%) rotate(${
-    ((h + m / 60) * 360) / 60 - 90
+    ((h + m / 60) * 360) / 12 - 90
   }deg)`;
 };
 
